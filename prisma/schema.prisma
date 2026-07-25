@@ -37,11 +37,11 @@ model Order {
 }
 
 model WebhookEvent {
-  id            String   @id @default(cuid())
-  stripeEventId String   @unique
-  type          String
-  payload       Json
-  processedAt   DateTime @default(now())
+  id             String   @id @default(cuid())
+  stripeEventId   String   @unique
+  type            String
+  payload         Json
+  processedAt     DateTime @default(now())
 }
 
 enum OrderStatus {
