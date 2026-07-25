@@ -1,23 +1,7 @@
 {
-  "name": "my-stripe-app",
-  "version": "1.0.0",
-  "description": "Express, Prisma, and Stripe payment app deployed on Railway",
-  "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js",
-    "dev": "nodemon src/app.js",
-    "prisma:generate": "prisma generate",
-    "prisma:migrate": "prisma migrate deploy",
-    "postinstall": "prisma generate"
-  },
-  "dependencies": {
-    "@prisma/client": "^6.0.0",
-    "dotenv": "^16.4.5",
-    "express": "^4.21.0",
-    "stripe": "^17.0.0"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.0",
-    "prisma": "^6.0.0"
+    "postinstall": "prisma generate",
+    "prisma:migrate": "prisma migrate deploy"
   }
 }
